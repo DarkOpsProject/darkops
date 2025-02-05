@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narzędzia - DarkOps</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="logo-mini.png">
+    <script src="main.js"></script>
+    <script src="bruteForce.js" defer></script>
+    <script src="sniffer.js" defer></script>
+    <script src="steganography.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">DarkOps</a>
+            <nav>
+                <ul>
+                    <li><a href="narzedzia.html">Narzędzia</a></li>
+                    <li><a href="about.html">Kali Linux</a></li>
+                    <li><a href="hashing.html">Hashing</a></li>
+                    <li><a href="security.html">Bezpieczeństwo</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="tools fade-in-up">
+        <h1>Wybierz narzędzie</h1>
+        <br>
+        <div class="tool-item">
+            <h2>Brute Force<img src="brute.png" style="height: 30px; margin-left: 0px;"></h2>
+            <p style="font-size: 20px">Prosty program do łamania haseł metodą brute force.</p>
+            <a href="#" class="btn" onclick="startBruteForce()">Uruchom</a>
+        </div>
+
+        <p style="margin-bottom: 20px;">Jak działa: Program Brute Force automatycznie generuje i testuje różne hasła, rozpoczynając od najprostszych i przechodząc do coraz bardziej złożonych, aż do dopasowania do właściwego hasła. Jest to czasochłonna technika, zwłaszcza przy silnych hasłach, ale skuteczna, jeśli nie ma ograniczeń na liczbę prób.</p>
+
+        <br>
+        <br>
+
+        <div class="tool-item">
+            <h2>Sniffer<img src="sniffer.png" style="height: 25px; margin-left: 5px;"></h2>
+            <p style="font-size: 20px">Monitoruj ruch w sieci, przechwycaj dane przesyłane przez użytkowników.</p>
+            <a href="#" class="btn" onclick="startSniffer()">Uruchom</a>
+        </div>
+
+        <p style="margin-bottom: 20px;">Jak działa: Sniffer „podsłuchuje” dane przepływające przez sieć, zapisując pakiety informacji. Dzięki temu można zobaczyć, jakie informacje są przesyłane między urządzeniami – takie jak dane logowania, wiadomości czy pliki. Sniffer jest przydatny do diagnostyki sieci, ale może być też nadużywany do przechwytywania wrażliwych informacji.</p>
+
+        <br>
+        <br>
+
+        <div class="tool-item">
+            <h2>Steganografia<img src="steganography.webp" style="height: 20px; margin-left: 5px;"></h2>
+            <p style="font-size: 20px">Ukryj dane w obrazkach, bez śladu. Idealne do nielegalnej wymiany informacji.</p>
+            <a href="#" class="btn" onclick="startSteganography()">Uruchom</a>
+        </div>
+
+        <p style="margin-bottom: 20px;">Jak działa: Steganografia wykorzystuje pliki multimedialne (np. obrazy), w których ukrywa dane. Informacje są wprowadzane do danych obrazu, zmieniając jego strukturę, ale nie wpływając zauważalnie na wygląd. Dzięki temu można bezpiecznie przekazywać ukryte treści, które pozostają niewidoczne dla osób nieświadomych ich obecności.</p>
+
+    </section>
+    
+
+    <footer>
+        <p class="footer">&copy; 2024 DarkOps. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hashing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="logo-mini.png">
+    <script src="main.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">DarkOps</a>
+            <nav>
+                <ul>
+                    <li><a href="narzedzia.html">Narzędzia</a></li>
+                    <li><a href="about.html">Kali Linux</a></li>
+                    <li><a href="hashing.html">Hashing</a></li>
+                    <li><a href="security.html">Bezpieczeństwo</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="main-content fade-in-up">
+        <h1>Czym jest hashing</h1>
+        <p style="margin-top: 10px;">Hashing to proces przekształcania danych (np. tekstu, pliku) na unikalny ciąg znaków o stałej długości, zwany hashem. Jest to funkcja jednokierunkowa, co oznacza, że niemożliwe jest odzyskanie oryginalnych danych na podstawie hasha. Hashing jest szeroko stosowany w bezpieczeństwie komputerowym, np. w przechowywaniu haseł, gdzie zamiast przechowywać same hasła, system zapisuje tylko ich hashe.</p>
+    </section>
+    
+    <section class="main-content fade-in-up">
+        <h1>Jak to działa</h1>
+        <p style="margin-top: 10px;">Skupmy się na SHA-256, jednym z najbezpieczniejszych algorytmów haszujących. SHA-256 przetwarza dane wejściowe w blokach o rozmiarze 512 bitów, wykonując serię operacji matematycznych (np. przesunięcia bitowe i operacje logiczne). Na końcu generuje 256-bitowy hash, który jest unikalnym skrótem danych wejściowych. Jest odporny na kolizje i nieodwracalny, co oznacza, że nie da się odzyskać oryginalnych danych na podstawie hasha.</p>
+    </section>
+
+    <img src="hashing.png" class="centered-image2 fade-in-up flexy" style="width: 700px;" onclick="openModal(this)">
+
+    <section class="main-content fade-in-up">
+        <h1>Gdzie SHA-256 znajduje zastosowanie</h1>
+        <p style="margin-top: 10px;">SHA-256 jest używane w wielu codziennych sytuacjach, w których zależy nam na bezpieczeństwie i integralności danych:</p>
+        <p style="margin-top: 15px;">1. Bezpieczne logowanie: Gdy logujesz się na stronach internetowych, Twoje hasło jest często haszowane za pomocą SHA-256, co zapewnia, że Twoje dane nie są przechowywane w postaci tekstu jawnego.</p>
+        <p style="margin-top: 10px;">2. Weryfikacja pobranych plików: Po pobraniu pliku z internetu, możesz sprawdzić jego integralność, porównując jego hash SHA-256 z tym podanym przez stronę – jeśli się zgadzają, oznacza to, że plik nie został zmieniony.</p>
+        <p style="margin-top: 10px;">3. Transakcje online: Podczas zakupu online, systemy płatności często wykorzystują SHA-256 do zapewnienia bezpieczeństwa transakcji, tworząc unikalny hash dla każdej operacji, co zapobiega jej manipulacji.</p>
+        <p style="margin-top: 10px;">4. Kopie zapasowe: Programy do tworzenia kopii zapasowych mogą używać SHA-256 do weryfikacji, czy kopie danych są identyczne z oryginałem i czy nie zostały uszkodzone podczas transferu lub przechowywania.</p>
+    </section>
+
+    <img src="safe.png" class="centered-image fade-in-up" style="width: 200px;">
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <footer>
+        <p class="footer">&copy; 2024 DarkOps. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+
+</body>
+</html>
